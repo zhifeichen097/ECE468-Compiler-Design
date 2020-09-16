@@ -1,0 +1,2 @@
+#!/bin/bash
+java -cp $CLASSPATH:classes/ Micro ${1} > ${2}

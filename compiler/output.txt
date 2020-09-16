@@ -1,0 +1,988 @@
+Commit ID tagged for submission: eb7bbec14ca87611944da9d9de4d201e82358b2d
+Submission graded at: 2019-12-13 17:58:57
+
+rm -rf classes build
+rm -rf build
+mkdir build
+java -cp /home/hkj/grader/ece468-grader/antlr-4.7.2-complete.jar:/home/hkj/grader/ece468-grader/antlr-4.7.2-complete.jar:.:. org.antlr.v4.Tool -o build Micro.g4
+rm -rf classes
+mkdir classes
+javac -cp /home/hkj/grader/ece468-grader/antlr-4.7.2-complete.jar:/home/hkj/grader/ece468-grader/antlr-4.7.2-complete.jar:.:. -d classes src/*.java build/*.java
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+tiny4Regs.c: In member function ‘float operand::rval()’:
+tiny4Regs.c:262:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+tiny4Regs.c: In member function ‘int operand::ival()’:
+tiny4Regs.c:255:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+tiny4Regs.c: In member function ‘std::__cxx11::string operand::sval()’:
+tiny4Regs.c:266:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+tiny200Regs.c: In member function ‘float operand::rval()’:
+tiny200Regs.c:262:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+tiny200Regs.c: In member function ‘int operand::ival()’:
+tiny200Regs.c:255:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+tiny200Regs.c: In member function ‘std::__cxx11::string operand::sval()’:
+tiny200Regs.c:266:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+Exception in thread "main" java.lang.NullPointerException
+	at Micro.main(Micro.java:52)
+Exception in thread "main" java.lang.NullPointerException
+	at IRList.replace(IRNode.java:337)
+	at MicroParser.else_part(MicroParser.java:2388)
+	at MicroParser.if_stmt(MicroParser.java:2331)
+	at MicroParser.stmt(MicroParser.java:1228)
+	at MicroParser.stmt_list(MicroParser.java:1152)
+	at MicroParser.stmt_list(MicroParser.java:1154)
+	at MicroParser.stmt_list(MicroParser.java:1154)
+	at MicroParser.stmt_list(MicroParser.java:1154)
+	at MicroParser.func_body(MicroParser.java:1098)
+	at MicroParser.func_decl(MicroParser.java:1040)
+	at MicroParser.func_declarations(MicroParser.java:958)
+	at MicroParser.pgm_body(MicroParser.java:296)
+	at MicroParser.program(MicroParser.java:211)
+	at Micro.main(Micro.java:27)
+Exception in thread "main" java.lang.NullPointerException
+	at java.util.LinkedList.addAll(LinkedList.java:408)
+	at java.util.LinkedList.addAll(LinkedList.java:387)
+	at Grapher.allocateRegisters(IRNode.java:668)
+	at Micro.main(Micro.java:71)
+Exception in thread "main" java.lang.NullPointerException
+	at Micro.main(Micro.java:52)
+make_failure:  None
+sim_failure:  0
+Testing..... step8_test19.micro
+Key output:
+ Start of tinyOutput
+536928042804
+
+Student output:
+ Start of tinyOutput
+536928042804
+
+Testing..... step8_test13.micro
+Key output:
+ Start of tinyOutput
+109211
+
+Student output:
+ Start of tinyOutput
+109214
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test2.micro
+Key output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+15 610
+16 987
+17 1597
+18 2584
+19 4181
+
+
+Student output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+15 610
+16 987
+17 1597
+18 2584
+19 4181
+
+
+Testing..... step8_test21.micro
+Key output:
+ Start of tinyOutput
+79
+7
+36
+84
+86
+3096
+3010
+-84
+9310461
+9310471
+9313577
+-10
+10.7534
+83.8724
+96.4293
+41.9362
+0.869782
+1.51037
+2.28122
+153.279
+
+
+Student output:
+ Start of tinyOutput
+79
+7
+36
+84
+86
+3096
+3010
+-84
+9310461
+9310471
+9313577
+-10
+10.7534
+83.8724
+96.4293
+41.9362
+0.869782
+1.51037
+2.28122
+153.279
+
+
+Testing..... step8_test3.micro
+Key output:
+ Start of tinyOutput
+You will be asked for three float numbers
+Please enter the first float number: Please enter the second float number: Please enter the third float number: 11.4944*56.8837+55.1693=709.011
+
+
+Student output:
+ Start of tinyOutput
+You will be asked for three float numbers
+Please enter the first float number: Please enter the second float number: Please enter the third float number: 11.4944*56.8837+55.1693=709.011
+
+
+Testing..... step8_test1.micro
+Key output:
+ Start of tinyOutput
+Please enter an integer number: 5040
+
+
+Student output:
+ Start of tinyOutput
+Please enter an integer number: 5040
+
+
+Testing..... step8_hidden3.micro
+Key output:
+ Start of tinyOutput
+272.485-20837.921673.421673.4-5629.17-5631.19-239-178.13721673.4
+
+Student output:
+ Start of tinyOutput
+272.485-20837.921673.421673.4-5629.17-5631.19-239-178.13721673.4
+
+Testing..... step8_test12.micro
+Key output:
+ Start of tinyOutput
+17672
+94
+94
+282
+
+
+Student output:
+ Start of tinyOutput
+17672
+94
+94
+282
+
+
+Testing..... step8_hidden9.micro
+
+[!] Test step8_hidden9.micro was killed for timing out!
+
+Testing..... step8_test5.micro
+Key output:
+ Start of tinyOutput
+100
+
+Student output:
+ Start of tinyOutput
+100
+
+Testing..... step8_test16.micro
+
+[!] Test step8_test16.micro was killed for timing out!
+
+Testing..... step8_test14.micro
+Key output:
+ Start of tinyOutput
+93
+
+Student output:
+ Start of tinyOutput
+93
+
+Testing..... step8_test10.micro
+Key output:
+ Start of tinyOutput
+3.77337
+
+
+Student output:
+ Start of tinyOutput
+3.77337
+
+
+Testing..... step8_hidden7.micro
+Key output:
+ Start of tinyOutput
+166092873098
+6994714155
+36072556177
+1249577870
+1249577870
+1249577870
+1249577870
+
+
+Student output:
+ error on line 34 jump target is not defined
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_hidden10.micro
+Key output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+1525515
+
+
+Student output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+1525515
+
+
+Testing..... step8_test9.micro
+Key output:
+ Start of tinyOutput
+9.63449 7
+
+
+Student output:
+ Start of tinyOutput
+9.63449 7
+
+
+Testing..... step8_hidden8.micro
+Key output:
+ Start of tinyOutput
+54042873438
+47257634880
+696447103830
+572278315867
+572278315867
+572278315867
+572278315867
+
+
+Student output:
+ 
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test11.micro
+Key output:
+ Start of tinyOutput
+91
+
+Student output:
+ Start of tinyOutput
+91
+
+Testing..... step8_test15.micro
+Key output:
+ Start of tinyOutput
+
+
+Student output:
+ Start of tinyOutput
+
+
+Testing..... step8_hidden2.micro
+
+[!] Test step8_hidden2.micro was killed for timing out!
+
+Testing..... step8_hidden4.micro
+Key output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+2096397
+
+
+Student output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+2096397
+
+
+Testing..... step8_test4.micro
+Key output:
+ Start of tinyOutput
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Correct!
+It took you 12 guesses
+
+Student output:
+ Start of tinyOutput
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Correct!
+It took you 12 guesses
+
+Testing..... step8_hidden1.micro
+Key output:
+ Start of tinyOutput
+Please enter 10 floating point numbers: Average of 10 numbers that you entered is: 45.461
+Maximum of the numbers is: 94.526
+
+
+Student output:
+ Start of tinyOutput
+Please enter 10 floating point numbers: Average of 10 numbers that you entered is: 45.461
+Maximum of the numbers is: 94.526
+
+
+Testing..... step8_test6.micro
+Key output:
+ Start of tinyOutput
+8.93023
+
+Student output:
+ Start of tinyOutput
+13.1284
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test7.micro
+Key output:
+ Start of tinyOutput
+100
+
+Student output:
+ Start of tinyOutput
+100
+
+Testing..... step8_test18.micro
+
+[!] Test step8_test18.micro was killed for timing out!
+
+Testing..... step8_test8.micro
+Key output:
+ Start of tinyOutput
+12286
+
+Student output:
+ Start of tinyOutput
+12286
+
+Testing..... step8_test17.micro
+Key output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+
+
+Student output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+
+
+Testing..... step8_hidden5.micro
+Key output:
+ Start of tinyOutput
+Please enter 10 integer numbers with whitespace between: 
+Sum of all 10 integers is: 519
+
+
+Student output:
+ error on line 30 jump target is not defined
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test20.micro
+Key output:
+ Start of tinyOutput
+692
+920
+920
+3.55
+
+
+Student output:
+ Start of tinyOutput
+692
+920
+920
+3.55
+
+
+Testing..... step8_hidden6.micro
+Key output:
+ Start of tinyOutput
+876236623022
+876236623022
+
+
+Student output:
+ error on line 34 jump target is not defined
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test19.micro
+Key output:
+ Start of tinyOutput
+536928042804
+
+Student output:
+ Start of tinyOutput
+536928042804
+
+Testing..... step8_test13.micro
+Key output:
+ Start of tinyOutput
+109211
+
+Student output:
+ Start of tinyOutput
+109214
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test2.micro
+Key output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+15 610
+16 987
+17 1597
+18 2584
+19 4181
+
+
+Student output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+15 610
+16 987
+17 1597
+18 2584
+19 4181
+
+
+Testing..... step8_test21.micro
+Key output:
+ Start of tinyOutput
+79
+7
+36
+84
+86
+3096
+3010
+-84
+9310461
+9310471
+9313577
+-10
+10.7534
+83.8724
+96.4293
+41.9362
+0.869782
+1.51037
+2.28122
+153.279
+
+
+Student output:
+ Start of tinyOutput
+79
+7
+36
+84
+86
+3096
+3010
+-84
+9310461
+9310471
+9313577
+-10
+10.7534
+83.8724
+96.4293
+41.9362
+0.869782
+1.51037
+2.28122
+153.279
+
+
+Testing..... step8_test3.micro
+Key output:
+ Start of tinyOutput
+You will be asked for three float numbers
+Please enter the first float number: Please enter the second float number: Please enter the third float number: 11.4944*56.8837+55.1693=709.011
+
+
+Student output:
+ Start of tinyOutput
+You will be asked for three float numbers
+Please enter the first float number: Please enter the second float number: Please enter the third float number: 11.4944*56.8837+55.1693=709.011
+
+Exception in thread "main" java.lang.NullPointerException
+	at Micro.main(Micro.java:52)
+Exception in thread "main" java.lang.NullPointerException
+	at IRList.replace(IRNode.java:337)
+	at MicroParser.else_part(MicroParser.java:2388)
+	at MicroParser.if_stmt(MicroParser.java:2331)
+	at MicroParser.stmt(MicroParser.java:1228)
+	at MicroParser.stmt_list(MicroParser.java:1152)
+	at MicroParser.stmt_list(MicroParser.java:1154)
+	at MicroParser.stmt_list(MicroParser.java:1154)
+	at MicroParser.stmt_list(MicroParser.java:1154)
+	at MicroParser.func_body(MicroParser.java:1098)
+	at MicroParser.func_decl(MicroParser.java:1040)
+	at MicroParser.func_declarations(MicroParser.java:958)
+	at MicroParser.pgm_body(MicroParser.java:296)
+	at MicroParser.program(MicroParser.java:211)
+	at Micro.main(Micro.java:27)
+Exception in thread "main" java.lang.NullPointerException
+	at java.util.LinkedList.addAll(LinkedList.java:408)
+	at java.util.LinkedList.addAll(LinkedList.java:387)
+	at Grapher.allocateRegisters(IRNode.java:668)
+	at Micro.main(Micro.java:71)
+Exception in thread "main" java.lang.NullPointerException
+	at Micro.main(Micro.java:52)
+
+Testing..... step8_test1.micro
+Key output:
+ Start of tinyOutput
+Please enter an integer number: 5040
+
+
+Student output:
+ Start of tinyOutput
+Please enter an integer number: 5040
+
+
+Testing..... step8_hidden3.micro
+Key output:
+ Start of tinyOutput
+272.485-20837.921673.421673.4-5629.17-5631.19-239-178.13721673.4
+
+Student output:
+ Start of tinyOutput
+272.485-20837.921673.421673.4-5629.17-5631.19-239-178.13721673.4
+
+Testing..... step8_test12.micro
+Key output:
+ Start of tinyOutput
+17672
+94
+94
+282
+
+
+Student output:
+ Start of tinyOutput
+17672
+94
+94
+282
+
+
+Testing..... step8_hidden9.micro
+
+[!] Test step8_hidden9.micro was killed for timing out!
+
+Testing..... step8_test5.micro
+Key output:
+ Start of tinyOutput
+100
+
+Student output:
+ Start of tinyOutput
+100
+
+Testing..... step8_test16.micro
+
+[!] Test step8_test16.micro was killed for timing out!
+
+Testing..... step8_test14.micro
+Key output:
+ Start of tinyOutput
+93
+
+Student output:
+ Start of tinyOutput
+93
+
+Testing..... step8_test10.micro
+Key output:
+ Start of tinyOutput
+3.77337
+
+
+Student output:
+ Start of tinyOutput
+3.77337
+
+
+Testing..... step8_hidden7.micro
+Key output:
+ Start of tinyOutput
+166092873098
+6994714155
+36072556177
+1249577870
+1249577870
+1249577870
+1249577870
+
+
+Student output:
+ error on line 34 jump target is not defined
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_hidden10.micro
+Key output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+1525515
+
+
+Student output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+1525515
+
+
+Testing..... step8_test9.micro
+Key output:
+ Start of tinyOutput
+9.63449 7
+
+
+Student output:
+ Start of tinyOutput
+9.63449 7
+
+
+Testing..... step8_hidden8.micro
+Key output:
+ Start of tinyOutput
+54042873438
+47257634880
+696447103830
+572278315867
+572278315867
+572278315867
+572278315867
+
+
+Student output:
+ 
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test11.micro
+Key output:
+ Start of tinyOutput
+91
+
+Student output:
+ Start of tinyOutput
+91
+
+Testing..... step8_test15.micro
+Key output:
+ Start of tinyOutput
+
+
+Student output:
+ Start of tinyOutput
+
+
+Testing..... step8_hidden2.micro
+
+[!] Test step8_hidden2.micro was killed for timing out!
+
+Testing..... step8_hidden4.micro
+Key output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+2096397
+
+
+Student output:
+ Start of tinyOutput
+Please enter 6 integer numbers with whitespace between: 
+2096397
+
+
+Testing..... step8_test4.micro
+Key output:
+ Start of tinyOutput
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Correct!
+It took you 12 guesses
+
+Student output:
+ Start of tinyOutput
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Wrong!
+Guess a number: Correct!
+It took you 12 guesses
+
+Testing..... step8_hidden1.micro
+Key output:
+ Start of tinyOutput
+Please enter 10 floating point numbers: Average of 10 numbers that you entered is: 45.461
+Maximum of the numbers is: 94.526
+
+
+Student output:
+ Start of tinyOutput
+Please enter 10 floating point numbers: Average of 10 numbers that you entered is: 45.461
+Maximum of the numbers is: 94.526
+
+
+Testing..... step8_test6.micro
+Key output:
+ Start of tinyOutput
+8.93023
+
+Student output:
+ Start of tinyOutput
+13.1284
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test7.micro
+Key output:
+ Start of tinyOutput
+100
+
+Student output:
+ Start of tinyOutput
+100
+
+Testing..... step8_test18.micro
+
+[!] Test step8_test18.micro was killed for timing out!
+
+Testing..... step8_test8.micro
+Key output:
+ Start of tinyOutput
+12286
+
+Student output:
+ Start of tinyOutput
+12286
+
+Testing..... step8_test17.micro
+Key output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+
+
+Student output:
+ Start of tinyOutput
+Please input an integer number: 0 0
+1 1
+2 1
+3 2
+4 3
+5 5
+6 8
+7 13
+8 21
+9 34
+10 55
+11 89
+12 144
+13 233
+14 377
+
+
+Testing..... step8_hidden5.micro
+Key output:
+ Start of tinyOutput
+Please enter 10 integer numbers with whitespace between: 
+Sum of all 10 integers is: 519
+
+
+Student output:
+ error on line 30 jump target is not defined
+
+Number of lines to be diffd from students output is different than solution
+Testing..... step8_test20.micro
+Key output:
+ Start of tinyOutput
+692
+920
+920
+3.55
+
+
+Student output:
+ Start of tinyOutput
+692
+920
+920
+3.55
+
+
+Testing..... step8_hidden6.micro
+Key output:
+ Start of tinyOutput
+876236623022
+876236623022
+
+
+Student output:
+ error on line 34 jump target is not defined
+
+Number of lines to be diffd from students output is different than solution
